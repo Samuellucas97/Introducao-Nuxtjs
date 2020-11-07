@@ -1,6 +1,6 @@
 <template>
 <div>
-  <nuxt-link to="/about">Sobre</nuxt-link>
+  <nuxt-link to="/posts">Postagens</nuxt-link>
   <div class="container">
     <div>
       <Logo />
