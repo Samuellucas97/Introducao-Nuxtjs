@@ -1,11 +1,24 @@
 <template>
   <div>
     <Nuxt />
+    <Footer />
   </div>
 </template>
 
+<script>
+import Footer from "../components/Footer"
+export default {
+  components: {
+    Footer
+  }  
+}
+</script>
+
 <style>
 html {
+
+  width: 100%;
+  height: 100%;
   font-family:
     'Source Sans Pro',
     -apple-system,
@@ -22,6 +35,14 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 *,

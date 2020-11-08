@@ -1,6 +1,6 @@
 <template>
 <div>
-  <nuxt-link to="/posts">Postagens</nuxt-link>
+  <nuxt-link to="/comments">Comentários</nuxt-link>
   <div class="container">
     <div>
       <Logo />
@@ -12,13 +12,7 @@
 </div>
 </template>
 
-<script>
-export default {}
-</script>
-
 <style>
-
-
 .container {
   margin: 0 auto;
   min-height: 100vh;

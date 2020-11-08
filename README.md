@@ -10,9 +10,8 @@ Neste repositório há o resultado do projeto prático implementado no seminári
 ## Como instalar o projeto
 
 Em seu computador execute os seguintes comandos para clonagem do repositório localmente e instalação das dependências do projeto:
-```bash
-# install dependencies
 
+```bash
 $ git clone https://github.com/Samuellucas97/Introducao-Nuxtjs 
 $ cd Introducao-Nuxtjs
 
@@ -20,7 +19,7 @@ $ yarn install ## Ou npm install
 ```
 Em seguida, crie dentro do projeto um arquivo chamado `.env` que conterá o endereço URL da API.
 
-```
+```env
 API_URL=https://jsonplaceholder.typicode.com/
 ```
 
@@ -44,10 +43,10 @@ Em estágio de produção, aconselha-se a usar o programa no modo de produção.
 
 | Modo de deploy: | Comando:  |    
 | :---------- | :------------- |
-|Server Side Rendering	| `$ yarn build && yarn start` |  
-|Site Static Generated 	| `$ yarn generate` |  
+|Server Side Rendering (SSR)	| `$ yarn build && yarn start` |  
+|Site Static Generated (SSG)	| `$ yarn generate` |  
 
 ## Referências
 
- - [Nuxt.js - Documentação (inglês) ](https://nuxtjs.org/docs/2.x/get-started/installation)
- - [Awesome Nuxt - Lista de conteúdos ](https://github.com/nuxt-community/awesome-nuxt)
+ - [Nuxt.js - Documentação (Inglês) ](https://nuxtjs.org/docs/2.x/get-started/installation)
+ - [Awesome Nuxt - Lista de conteúdos (Inglês) ](https://github.com/nuxt-community/awesome-nuxt)

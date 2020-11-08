@@ -1,9 +1,9 @@
 <template>
     <div>
-        <h1>Postagens</h1>
+        <h1>Comentários</h1>
         <ul>
-            <li v-for="post in posts" :key="post.id">
-                {{post.title}}
+            <li v-for="comment in comments" :key="comment.id">
+                <nuxt-link :to="`${$route.path}/${comment.id}`">{{comment.name}}</nuxt-link>
             </li>
         </ul>
     </div>
@@ -13,8 +13,8 @@
 export default {
     data() {
         return {
-            posts: [],
-            titlePage: "Postagens"
+            comments: [],
+            titlePage: "Comentários"
         }
     },
     mounted() {
@@ -25,7 +25,7 @@ export default {
             title: this.titlePage,
             meta: [
                 {
-                    description: 'Postagens realizadas'
+                    description: 'Comentários realizados'
                 }
             ]
         }
@@ -33,9 +33,9 @@ export default {
     methods: {
         getPosts() {
             this.$axios
-                .get("posts")
+                .get("comments")
                 .then( res => {
-                    this.posts = res.data;
+                    this.comments = res.data;
                 })   
         }
     }
