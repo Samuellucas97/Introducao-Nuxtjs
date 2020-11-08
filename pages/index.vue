@@ -7,15 +7,16 @@
       <h1 class="title">
         Introdução ao Nuxt.js
       </h1>
+      
     </div>
   </div>
 </div>
 </template>
 
-<style>
+<style scoped>
 .container {
   margin: 0 auto;
-  min-height: 100vh;
+  min-height: 89vh;
   display: flex;
   justify-content: center;
   align-items: center;
