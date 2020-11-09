@@ -1,19 +1,21 @@
 <template>
     <div>
         <div class="container">
-            <form>
+            <form @submit.prevent="submitForm">
                 <h1>Novo comentário</h1>
                 <div class="field" >
-                    <label for="titulo">
-                        <i class="far fa-user"></i>Título:
-                    </label>
-                    <input name="titulo" placeholder="Escreva aqui..." type="text" required>
+                    <label for="name">Nome: </label>
+                    <input v-model="form.name" name="name" placeholder="Escreva aqui..." type="text" required>
                 </div>
                 <div class="field" >
-                    <label for="message">
+                    <label for="email">Email:</label>
+                    <input type="email" v-model="form.email" name="name" placeholder="Escreva aqui..." required>
+                </div>
+                <div class="field" >
+                    <label for="body">
                         <i class="far fa-edit"></i>Conteúdo:
                     </label>
-                    <textarea name="message" placeholder="Escreva aqui..." required></textarea>
+                    <textarea v-model="form.body" name="body" placeholder="Escreva aqui..." required></textarea>
                 </div>
                 <button class="btn" type="submit">Enviar</button>
             </form>
@@ -24,7 +26,35 @@
 
 <script>
 export default {
-    layout: 'customLayout'
+    layout: 'customLayout',
+    data() {
+        return {
+            form: {
+                title: "",
+                body: "",
+                email: "", 
+                id: 1
+            }
+        }
+    },
+    methods: {
+        submitForm() {
+            this.$axios
+                .post('/comments', this.form)
+                .then( res => {
+                    alert("Funcionou!");
+                
+                })
+                .catch( err => {
+                    alert("Deu erro!");
+                })     
+        },
+        cleanAll() {
+            this.form.title = "";
+            this.form.body = "";
+            this.form.email = "";
+        }
+    }
 }
 </script>
 
@@ -84,16 +114,12 @@ line-height: inherit;
 width: 100%;
 }
 textarea {
-min-height: 250px;    
+min-height: 180px;    
 }
 input, textarea {
 padding: 10px 20px 10px 20px;
 }
 label {
 font-size: 19px;
-}
-
-.field {
-
 }
 </style>
