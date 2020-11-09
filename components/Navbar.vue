@@ -1,6 +1,6 @@
 <template>
     <header>
-        <svg class="NuxtLogo" width="60" height="45" viewBox="0 0 452 342" xmlns="http://www.w3.org/2000/svg">
+        <svg class="logo" width="60" height="45" viewBox="0 0 452 342" xmlns="http://www.w3.org/2000/svg">
             <path
             d="M139 330l-1-2c-2-4-2-8-1-13H29L189 31l67 121 22-16-67-121c-1-2-9-14-22-14-6 0-15 2-22 15L5 303c-1 3-8 16-2 27 4 6 10 12 24 12h136c-14 0-21-6-24-12z"
             fill="#00C58E"
@@ -14,6 +14,45 @@
             fill="#2F495E"
             />
         </svg>
-        <nuxt-link to="/">Introdução ao Nuxt.js</nuxt-link>
+        <nav>
+            <ul class="nav__links">
+                <li><nuxt-link to="/">Início</nuxt-link></li>
+                <li><nuxt-link to="/">Comentários</nuxt-link></li>
+            </ul>
+        </nav>
     </header>
 </template>
+
+<style scoped>
+
+header {
+height: 5rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 30px 10%;
+}
+
+.nav__links {
+list-style: none;
+}
+
+.nav__links li {
+display: inline-block;
+padding: 0px 20px;
+}
+
+.nav__links li a {
+transition: all 0.3s ease 0s;
+font-size: 22px;
+}
+
+li, a {
+    color: #edf0f1;
+}
+
+.nav__links li a:hover {
+    color: #0088a9;
+}
+
+</style>

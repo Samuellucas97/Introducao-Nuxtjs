@@ -21,12 +21,19 @@ word-spacing: 1px;
 }
 
 *,
-*::before,
+*::before, 
 *::after {
 box-sizing: border-box;
 margin: 0;
 }
 
-a {
+body {
+background-color: #302a26;
+color:#ecd1b3;
+}
+a, li {
 text-decoration: none;
+}
+a {
+color: #0088a9;
 }
