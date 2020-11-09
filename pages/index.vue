@@ -7,7 +7,7 @@
         Introdução ao Nuxt.js
       </h1>
       
-      <button type="button" to="/comments">Comentários</button>
+      <nuxt-link class="link" to="/comments">Comentários</nuxt-link>
       
     </div>
   </div>
@@ -17,13 +17,14 @@
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-button {
-  width: -webkit-max-content;
-  width: -moz-max-content;
+h1 {
+  margin-bottom: 50px;
+}
+
+.link {
   width: max-content;
   color: #ECF0F1;
   background-color: #50D18D;
-  margin: 1.25rem 0 0 1.25rem;
   padding: 0.375rem 2rem;
   border-radius: 1.25rem;
   cursor: pointer;
@@ -31,7 +32,6 @@ button {
 
   font-weight: 300;
   font-size: 25px;
-  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 .container {
@@ -52,15 +52,8 @@ button {
   font-weight: 400;
   font-size: 60px;
   color: #35495e;
-  letter-spacing:   px;
+  letter-spacing:  1 px;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
 
 </style>

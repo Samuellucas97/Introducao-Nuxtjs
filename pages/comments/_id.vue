@@ -38,12 +38,14 @@ export default {
 
 <style scoped>
 .container {
-  margin: 0 auto;
-  min-height: 85.5vh;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+margin: 20px 40px;
+padding: 20px;
+min-height: 77vh;
+}
+
+
+h1 {
+margin-bottom: 20px;
 }
 
 </style>

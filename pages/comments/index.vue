@@ -1,11 +1,13 @@
 <template>
     <div>
-        <h1>Comentários</h1>
-        <ul>
-            <li v-for="comment in comments" :key="comment.id">
-                <nuxt-link :to="`${$route.path}/${comment.id}`">{{comment.name}}</nuxt-link>
-            </li>
-        </ul>
+        <div class="container">    
+            <h1>Comentários</h1>
+            <ul>
+                <li v-for="comment in comments" :key="comment.id">
+                    <nuxt-link :to="`${$route.path}/${comment.id}`">{{comment.name}}</nuxt-link>
+                </li>
+            </ul>
+        </div>
     </div>
 </template>
 
@@ -42,3 +44,18 @@ export default {
     }
 }
 </script>
+<style scoped>
+
+h1 {
+margin-bottom: 20px;
+}
+
+li {
+margin-bottom: 5px;
+}
+.container {
+margin: 20px 40px;
+padding: 20px;
+min-height: 76.5vh;
+}
+</style>

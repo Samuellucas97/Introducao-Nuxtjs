@@ -17,9 +17,10 @@
         <nav>
             <ul class="nav__links">
                 <li><nuxt-link to="/">Início</nuxt-link></li>
-                <li><nuxt-link to="/">Comentários</nuxt-link></li>
+                <li><nuxt-link to="/comments">Comentários</nuxt-link></li>
             </ul>
         </nav>
+        <nuxt-link to="/comments/create"><button>Comentar</button></nuxt-link>
     </header>
 </template>
 
@@ -28,11 +29,14 @@
 header {
 height: 5rem;
 display: flex;
-justify-content: space-between;
+justify-content: flex-end;
 align-items: center;
 padding: 30px 10%;
 }
 
+.logo {
+margin-right: auto;
+}
 .nav__links {
 list-style: none;
 }
@@ -44,15 +48,29 @@ padding: 0px 20px;
 
 .nav__links li a {
 transition: all 0.3s ease 0s;
-font-size: 22px;
 }
 
-li, a {
-    color: #edf0f1;
+li, a, button {
+color: #edf0f1;
+font-size: 22px;
+
 }
 
 .nav__links li a:hover {
     color: #0088a9;
 }
 
+button {
+padding: 9px 25px;
+background-color: rgba(0, 136, 169, 1);
+border: none;
+border-radius: 50px;
+cursor: pointer;
+transition: all 0.3s ease 0s;
+}
+
+
+button:hover {
+background-color: rgba(0, 136, 169, 0.8);
+}
 </style>
