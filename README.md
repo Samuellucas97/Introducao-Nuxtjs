@@ -1,4 +1,4 @@
-## Sobre
+## Introdução
 
 Neste repositório há o resultado do projeto prático implementado no seminário de **Introdução ao Vue.js e Nuxt.js** apresentado por Samuel Lucas, membro do Programa Educação Tutorial do Curso de Ciência da Computação da Universidade Federal do Rio Grande do Norte.
 
@@ -7,7 +7,7 @@ Neste repositório há o resultado do projeto prático implementado no seminári
 - [Como executar o projeto](#como-executar-o-projeto) - Instruções sobre como executar o projeto.
 - [Referências](#referências) - Links contendo material de referência.
 
-
+A gravação do seminário está disponível em :tv: [https://youtu.be/PK2kFezgqto](https://youtu.be/PK2kFezgqto).
 
 ## Requisitos
 
